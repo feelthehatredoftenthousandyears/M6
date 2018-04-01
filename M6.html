@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>mission 6</title>
+<meta content="text/html" charset="UTF-8"/>
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, 	maximum-scale=1, user-scalable=no"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+html{
+	font-size: 100%;
+}
+.t1{
+	display: block;
+	color: #afbac0;
+	font-size: .7rem;
+}
+.t2{
+	display: block;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	line-height: 30px;
+}
+.switch1{
+ 	width: 135px;
+ 	height: 38px;
+ 	background-color: #55a8b3;
+ 	border-radius: 7px;
+ 	text-align: center;
+  	display: inline-block;
+  	line-height: 38px;
+  	color: #ffffff;
+}
+.switch2{
+ 	width: 70px;
+  	height: 38px;
+  	background-color: #ffffff;
+ 	border-radius: 7px;
+  	float: right;
+  	display: inline-block;
+  	line-height: 38px;
+  	color: #55a8b3;
+}
+.switch{
+	width: 100%;
+	text-align: center;
+	margin: 6px 0 0 0;
+	}
+.btn-group-justified{
+	margin: 50px 0 0px 0;
+	border-bottom: 1px solid #afbac0;
+}
+.title1{
+	background-color: #5fc0cd;
+}
+.box-p1{
+	position: fixed;
+	top: 17px;
+	right: 14px;
+	width: 20px;
+	height: 20.7px;
+	z-index: 1032;
+	background-position: 0 -70px;
+	background-image: url(img/111.png);
+}
+
+.b1{
+	height: 40px;
+	padding: 0;
+	line-height: 40px;
+}
+.caret{
+	position: relative;
+	left:15%;
+	color: #afbac0;
+}
+.line{
+	background: radial-gradient(black -80%, white 100%);
+	float:left;
+	width: 1px;
+	height: 26px;
+	vertical-align: middle;
+	margin: 6px 0;
+}
+.dropdown-toggle{
+	color: #afbac0;
+}
+.col-xs-4{
+	height: 84px;
+	line-height: 84px;
+	padding: 0 10px;
+	color: red;
+	text-align: right;
+}
+.col-xs-8{
+	padding:10px 15px;
+}
+.row{
+	border-bottom: 1px solid #afbac0;
+}
+.glyphicon-menu-right{
+	color: #5fc0cd;
+}
+.imgb{
+	height: 47px;
+	width: 47px;
+	background-position: 0 -21.5px;
+	background-image: url(img/111.png); 
+}
+.imga{
+	height: 22.4px;
+	width: 22px;
+	background-position: -25px 0px;
+	background-image: url(img/111.png); 
+}
+.imgc{
+	height: 22.4px;
+	width: 22.5px;
+	background-position: 0px 0px;
+	background-image: url(img/111.png); 
+}
+.f1{
+	position: relative;
+	float: left;
+	left: -50%;
+	border-style: none;
+	background-color: #f8f8f8;
+	padding: 0 10px;
+}
+.qwer{
+	position: relative;
+	float: left;
+	left: 50%;
+}
+.my{
+	font-size: 0.6rem;
+	text-align: center;
+	color: #afbac0;
+}
+.page{
+	font-size: 0.6rem;
+	text-align: center;
+	color: #5fc0cd;
+}
+.f2{
+	padding: 5px 30px 0 30px;
+}
+</style>
+</head>
+
+<body>
+<header>
+	<div class="navbar navbar-default navbar-fixed-top title1">
+    	<div class="switch">
+       		<div class="switch1">
+  				找雇主
+  				<div class="switch2">
+    				找护工
+  				</div>
+			</div>
+		</div>
+	</div>
+	<div class="box-p1"></div>
+</header>
+
+
+<div class="btn-group btn-group-justified"><!--定义一个等分按钮组-->
+	<div class="dropdown btn b1" data-toggle="dropdown"><!--按钮的外部容器-->
+ 		<div data-toggle="dropdown" class="dropdown-toggle"><!--按钮的下拉菜单标题-->
+ 			所在地<span class="caret"></span>
+ 		</div>
+  		<ul class="dropdown-menu">
+    		<li role="presentation"><a href="#">狼牙区</a></li>
+    		<li role="presentation"><a href="#">飞虎路</a></li>
+    		<li role="presentation"><a href="#">断罪小学</a></li>
+    		<li role="presentation"><a href="#">六年二班</a></li>
+  		</ul>
+	</div> 
+
+	<div class="dropdown btn b1" data-toggle="dropdown">
+ 		<div data-toggle="dropdown" class="dropdown-toggle">
+ 			<div class="line"></div>食宿<span class="caret"></span>
+ 		</div>
+  		<ul class="dropdown-menu">
+    		<li role="presentation"><a href="#">吃住</a></li>
+    		<li role="presentation"><a href="#">吃</a></li>
+    		<li role="presentation"><a href="#">住</a></li>
+  		</ul>
+	</div>
+
+	<div class="dropdown btn b1" data-toggle="dropdown">
+ 		<div data-toggle="dropdown" class="dropdown-toggle">
+ 			<div class="line"></div>病人情况<span class="caret"></span>
+ 		</div>
+  		<ul class="dropdown-menu pull-right">
+    		<li role="presentation"><a href="#">晕眩</a></li>
+    		<li role="presentation"><a href="#">麻痹</a></li>
+    		<li role="presentation"><a href="#">中毒</a></li>
+    		<li role="presentation"><a href="#">减速</a></li>
+  		</ul>
+	</div>
+
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="t1">
+				<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;服务日期
+			</span>
+			<span class="t2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-7-5 至 2015-7-12</span>
+			<span class="t1">
+				<span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;北京.通州.果园
+			</span>
+		</div>
+		<div class="col-xs-4">
+			25元/小时&nbsp;<span class="glyphicon glyphicon-menu-right"></span>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="t1">
+				<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;服务日期
+			</span>
+			<nobr class="t2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-7-5 至 2015-7-12qwewqrqewq</nobr>
+			<span class="t1">
+				<span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;北京.通州.果园
+			</span>
+		</div>
+		<div class="col-xs-4">
+			25元/小时&nbsp;<span class="glyphicon glyphicon-menu-right"></span>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="t1">
+				<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;服务日期
+			</span>
+			<span class="t2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-7-5 至 2015-7-12</span>
+			<span class="t1">
+				<span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;北京.通州.果园
+			</span>
+		</div>
+		<div class="col-xs-4">
+			25元/小时&nbsp;<span class="glyphicon glyphicon-menu-right"></span>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="t1">
+				<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;服务日期
+			</span>
+			<span class="t2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-7-5 至 2015-7-12</span>
+			<span class="t1">
+				<span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;北京.通州.果园
+			</span>
+		</div>
+		<div class="col-xs-4">
+			25元/小时&nbsp;<span class="glyphicon glyphicon-menu-right"></span>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="t1">
+				<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;服务日期
+			</span>
+			<span class="t2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-7-5 至 2015-7-12</span>
+			<span class="t1">
+				<span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;北京.通州.果园
+			</span>
+		</div>
+		<div class="col-xs-4">
+			25元/小时&nbsp;<span class="glyphicon glyphicon-menu-right"></span>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="t1">
+				<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;服务日期
+			</span>
+			<nobr class="t2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-7-5 至 2015-7-12qewqrqeqw</nobr>
+			<span class="t1">
+				<span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;北京.通州.果园
+			</span>
+		</div>
+		<div class="col-xs-4">
+			25元/小时&nbsp;<span class="glyphicon glyphicon-menu-right"></span>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="t1">
+				<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;服务日期
+			</span>
+			<span class="t2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-7-5 至 2015-7-12</span>
+			<span class="t1">
+				<span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;北京.通州.果园
+			</span>
+		</div>
+		<div class="col-xs-4">
+			25元/小时&nbsp;<span class="glyphicon glyphicon-menu-right"></span>
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="qwer">
+
+			<button class="btn f1 f2" type="button">
+				<div class="imga"></div>
+					<span class="page">主页</span>
+			</button> 
+
+			<button class="btn f1" type="button">
+				<div class="imgb"></div>
+			</button>
+
+			<button class="btn f1 f2" type="button">
+				<div class="imgc"></div>
+				<span class="my">我的</span>
+				
+			</button>
+		</div>
+	</nav>
+</footer>
+
+
+
+
+<!-- Latest compiled and minified CSS -->
+<script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
