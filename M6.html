@@ -9,44 +9,33 @@
 html{
 	font-size: 100%;
 }
-.t1{
-	display: block;
-	color: #afbac0;
-	font-size: .7rem;
-}
-.t2{
-	display: block;
-	overflow:hidden;
-	text-overflow: ellipsis;
-	line-height: 30px;
-}
+.switch{
+	width: 100%;
+	margin: 6px 0 0 0;
+	text-align: center;
+	}
 .switch1{
+	display: inline-block;
  	width: 135px;
  	height: 38px;
+ 	text-align: center;
+ 	line-height: 38px;
  	background-color: #55a8b3;
  	border-radius: 7px;
- 	text-align: center;
-  	display: inline-block;
-  	line-height: 38px;
   	color: #ffffff;
 }
 .switch2{
+	float: right;
+  	display: inline-block;
  	width: 70px;
   	height: 38px;
+  	line-height: 38px;
   	background-color: #ffffff;
  	border-radius: 7px;
-  	float: right;
-  	display: inline-block;
-  	line-height: 38px;
   	color: #55a8b3;
 }
-.switch{
-	width: 100%;
-	text-align: center;
-	margin: 6px 0 0 0;
-	}
 .btn-group-justified{
-	margin: 50px 0 0px 0;
+	margin: 50px 0 0 0;
 	border-bottom: 1px solid #afbac0;
 }
 .title1{
@@ -62,7 +51,6 @@ html{
 	background-position: 0 -70px;
 	background-image: url(img/111.png);
 }
-
 .b1{
 	height: 40px;
 	padding: 0;
@@ -70,35 +58,52 @@ html{
 }
 .caret{
 	position: relative;
-	left:15%;
+	left: 15%;
 	color: #afbac0;
 }
 .line{
-	background: radial-gradient(black -80%, white 100%);
 	float:left;
 	width: 1px;
 	height: 26px;
-	vertical-align: middle;
 	margin: 6px 0;
+	vertical-align: middle;
+	background: radial-gradient(black -80%, white 100%);
 }
 .dropdown-toggle{
 	color: #afbac0;
 }
-.col-xs-4{
-	height: 84px;
-	line-height: 84px;
-	padding: 0 10px;
-	color: red;
-	text-align: right;
+.t1{
+	display: block;
+	color: #afbac0;
+	font-size: .7rem;
 }
-.col-xs-8{
-	padding:10px 15px;
+.t2{
+	display: block;
+	text-overflow: ellipsis;
+	line-height: 30px;
+	overflow: hidden;
 }
 .row{
 	border-bottom: 1px solid #afbac0;
 }
+.col-xs-4{
+	height: 84px;
+	padding: 0 10px;
+	line-height: 84px;
+	text-align: right;
+	color: #ff0000;
+
+}
+.col-xs-8{
+	padding: 10px 15px;
+}
 .glyphicon-menu-right{
 	color: #5fc0cd;
+}
+.box-f{
+	position: relative;
+	float: left;
+	left: 50%;
 }
 .imgb{
 	height: 47px;
@@ -122,27 +127,22 @@ html{
 	position: relative;
 	float: left;
 	left: -50%;
+	padding: 0 10px;
 	border-style: none;
 	background-color: #f8f8f8;
-	padding: 0 10px;
-}
-.qwer{
-	position: relative;
-	float: left;
-	left: 50%;
-}
-.my{
-	font-size: 0.6rem;
-	text-align: center;
-	color: #afbac0;
-}
-.page{
-	font-size: 0.6rem;
-	text-align: center;
-	color: #5fc0cd;
 }
 .f2{
 	padding: 5px 30px 0 30px;
+}
+.my{
+	text-align: center;
+	color: #afbac0;
+	font-size: .6rem;
+}
+.page{
+	text-align: center;
+	font-size: .6rem;
+	color: #5fc0cd;
 }
 </style>
 </head>
@@ -307,12 +307,12 @@ html{
 			25元/小时&nbsp;<span class="glyphicon glyphicon-menu-right"></span>
 		</div>
 	</div>
-	
+
 </div>
 
 <footer>
 	<nav class="navbar navbar-default navbar-fixed-bottom">
-		<div class="qwer">
+		<div class="box-f">
 
 			<button class="btn f1 f2" type="button">
 				<div class="imga"></div>
@@ -331,8 +331,6 @@ html{
 		</div>
 	</nav>
 </footer>
-
-
 
 
 <!-- Latest compiled and minified CSS -->
